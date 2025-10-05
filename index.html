@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Catcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div id="mode">
+
+    </div>
+
+    <div class="game-container">
+        <h1> 🎯Colour Catcher</h1>
+        <p>Click on: <span id="target-color">#</span></p>
+        <div id="grid" class="color-grid"></div>
+        <p>⏰Timer Left: <span id="time">30</span>Sec</p>
+        <p>🏆Score:<span id="score">0</span></p>
+        <button onclick="startGame()">Start Game</button>
+        <button id="endBtn">End Game</button>
+    </div>
+
+
+    <audio id="bgMusic" loop>
+        <source src="bgMusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="correctSound">
+        <source src="correctSound.wav" type="audio/mpeg">
+    </audio>
+
+    <audio id="wrongSound">
+        <source src="wrongSound.wav" type="audio/mpeg">
+    </audio>
+    <button id="musicBtn">🔊 Music On</button>
+
+    <button id="fullscreenBtn">⛶ Fullscreen</button>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
